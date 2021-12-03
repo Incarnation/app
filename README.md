@@ -1,7 +1,6 @@
 # app
 
 
-Python flask project test
 
 Run the project by running the command
 pip install -r requirements.txt
@@ -38,6 +37,7 @@ http://127.0.0.1:5000/api/books/61a5746caebb9239739a8f96
 
 PUT - update a single book with book id as url parameter
 http://127.0.0.1:5000/api/books/61a5746caebb9239739a8f96
+json body
 {
     "user_id": "61a56a765eb6cf68efab7ded",
     "book": {
