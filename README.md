@@ -26,6 +26,7 @@ instead of using Mongdb Altas
 Manage all the secrets keys using Cloud secret/key management(AWS, Google Cloud, Azure, etc)
 Add dockerfile for containerization
 Add Jenksfile for CICD deployment 
+When deploy to the Cloud, create seperated environments for Test, Beta, Production, etc
 
 
 ## Install
