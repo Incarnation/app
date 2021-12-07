@@ -1,16 +1,32 @@
 # REST API document
 
+Framework choice:
+Chose Flask and Flask-RESTful as the REST API framework
+Easy to setup and simple to use
+Has built-in development server, debugger, unit test support, templating, secure cookies and RESTful request dispatching
 
-For database, create a model for Book and User. 
+used Flask-RESTful as a extension to structure the REST APIs
+it has a feature call resourceful routing which provide a simple way to access the HTTP methods. for example, each function can be treated as a Resource. each Resource is a class that inherits from the Resource class of flask_restful. once the resouce is created and defined we can add method such as GET, POST, PUT, DELETE, etc
+
+Flask-RESTful also provide a mechanism where I can use ORM models or custom classes as response data.
+
+
+For database, I used MongoDB as database due to better scaling capability in a distribute environment.
+it's easy to use and implement. and there is not very complex query needed in this scenario. 
+and data consistency is not a must have in this scenario.
+Create a model for Book and User. 
 Each Book has a reference field 'added_by' reference to the User. 
 Each User has a list of reference field book id referenced to the Book. 
 
-Used MongoDB as database due to better scaling in a distribute environment. 
-Easy to use and implement. 
-it's fast and data consistency is not very important. 
-and no complex queries is needed.
+## Improvements can be made:
+Add authentication and authorization to the REST APIs
+Add all environment variables to a seperated file
+use a database that is resided in the same network when deploy to to the cloud (AWS, Google Cloud, Azure, etc)
+instead of using Mongdb Altas
+Manage all the secrets keys using Cloud secret/key management(AWS, Google Cloud, Azure, etc)
+Add dockerfile for containerization
+Add Jenksfile for CICD deployment 
 
-Used flask-restful to structure the application for better maintenance
 
 ## Install
 
