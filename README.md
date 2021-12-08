@@ -27,6 +27,7 @@ Framework choice:
 * Add dockerfile for containerization
 * Add Jenksfile for CICD deployment 
 * When deploy to the Cloud, create seperated environments for Test, Beta, Production, etc
+* Include all the tests cases for all the error codes
 
 
 ## Install
